@@ -1,12 +1,12 @@
 
-#ifndef studentGroup_hpp
+#ifndef studentGroup_h
 
 #include <stdio.h>
 #include <algorithm>
 #include <iostream>
 #include <string>
 #include <vector>
-#include "student.hpp"
+#include "student.h"
 #include "StudentDefault.h"
 
 using namespace std;
