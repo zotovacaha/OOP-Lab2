@@ -6,11 +6,11 @@
 #include <vector>
 #include <locale>
 #include <ctime>
-#include "student.hpp"
+#include "student.h"
 #include "studentDefault.h"
 #include "StudentCouncilMember.h"
 #include "StudentNerd.h"
-#include "studentGroup.hpp"
+#include "studentGroup.h"
 #include "windows.h"
 
 using namespace std;
