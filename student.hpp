@@ -1,6 +1,6 @@
 
-#ifndef student_hpp
-#define student_hpp
+#ifndef student_h
+#define student_h
 
 #include <stdio.h>
 #include <vector>
