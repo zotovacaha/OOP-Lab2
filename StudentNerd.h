@@ -1,5 +1,5 @@
 
-#include "student.hpp"
+#include "student.h"
 class StudentNerd: public Student
 {
 public:
