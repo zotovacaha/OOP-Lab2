@@ -1,5 +1,5 @@
 
-#include "studentGroup.hpp"
+#include "studentGroup.h"
 
 StudentGroup::StudentGroup(int number)
 {
