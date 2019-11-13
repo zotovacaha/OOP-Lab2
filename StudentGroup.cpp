@@ -1,5 +1,5 @@
 
-#include "studentGroup.h"
+#include "StudentGroup.h"
 
 StudentGroup::StudentGroup(int number)
 {
@@ -13,7 +13,6 @@ void StudentGroup::addStudent(Student* student)
         cout<<"Данный студент уже находится в группе"<<endl;
     } else {
         listOfStudents.push_back(student);
-       
         student->addGroupNumber(this->groupNumber);
     }
     }
@@ -25,7 +24,7 @@ void StudentGroup::deleteStudent(Student* student)
 {
     vector<Student*>::iterator position = find(listOfStudents.begin(), listOfStudents.end(), student);
     if (position != listOfStudents.end()){
-        
+       
         student->deleteGroupNumber(this->groupNumber);
         listOfStudents.erase(position);
     }
@@ -109,6 +108,8 @@ vector<Student*> StudentGroup::getListOfStudentsSortedByGrades()
 
     return tempVector;
 }
+
+
 
 
 
