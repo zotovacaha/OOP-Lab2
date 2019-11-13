@@ -2,11 +2,11 @@
 
 StudentNerd::StudentNerd(string name): Student(name, (4 + rand() % 2))
 {
+	
 }
-
 int StudentNerd::doTheExam()
 {
-	return 4 + rand()%2;
+	return 4 + rand() % 2;
 }
 int StudentNerd::doTheRetakeExam()
 {
@@ -14,4 +14,5 @@ int StudentNerd::doTheRetakeExam()
 }
 StudentNerd::~StudentNerd()
 {
+	
 }
