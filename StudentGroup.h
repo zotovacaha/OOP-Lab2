@@ -1,12 +1,12 @@
-
-#ifndef studentGroup_h
+#ifndef StudentGroup_h
+#define StudentGroup_h
 
 #include <stdio.h>
 #include <algorithm>
 #include <iostream>
 #include <string>
 #include <vector>
-#include "student.h"
+#include "Student.h"
 #include "StudentDefault.h"
 
 using namespace std;
@@ -20,13 +20,16 @@ public:
     void addStudent(Student* student);
     Student* getStudentByName(string &name);
     void deleteStudent(Student* student);
-	void deleteAllStudents();
+    void deleteAllStudents();
     int getGroupNumber();
     void setGroupNumber(int groupNumber);
-	void startExam();
-	void startRetakeExam(Student* student);
+    void startExam();
+    void startRetakeExam(Student* student);
     vector<Student*> getListOfStudents();
     vector<Student*> getListOfStudentsSortedByGrades();
     StudentGroup(int number);
 };
 #endif 
+
+
+
