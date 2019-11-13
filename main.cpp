@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -6,11 +5,11 @@
 #include <vector>
 #include <locale>
 #include <ctime>
-#include "student.h"
-#include "studentDefault.h"
+#include "Student.h"
+#include "StudentDefault.h"
 #include "StudentCouncilMember.h"
 #include "StudentNerd.h"
-#include "studentGroup.h"
+#include "StudentGroup.h"
 #include "windows.h"
 
 using namespace std;
@@ -110,7 +109,8 @@ int main(int argc, const char * argv[]) {
 	Student* listOfAllNerdStudents[10];
 	for (int i = 0; i < 10; i++)
 	{
-		listOfAllNerdStudents[i]=listOfAllStudents[i]->switchToNerd();
+		StudentNerd* tempNerd = new StudentNerd(listOfAllStudents[i]);
+		listOfAllNerdStudents[i]= tempNerd;
 	}
 	for (int i = 0; i < 5; i++)
 	{
@@ -132,5 +132,7 @@ int main(int argc, const char * argv[]) {
 	
 return 0;
 }
+
+
 
 
