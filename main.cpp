@@ -36,18 +36,18 @@ int main(int argc, const char * argv[]) {
     int groups[5] = {111,222,333,444,555};
     for(int i=0; i<6; i++)
     {
-		StudentDefault* student = new StudentDefault(names[i]);
+	StudentDefault* student = new StudentDefault(names[i]);
         listOfAllStudents[i] = student;
     }
 	for (int i = 6; i < 8; i++)
 	{
-		StudentNerd* student = new StudentNerd(names[i]);
-		listOfAllStudents[i] = student;
+	     StudentNerd* student = new StudentNerd(names[i]);
+	     listOfAllStudents[i] = student;
 	}
 	for (int i = 8; i < 10; i++)
 	{
-		StudentCouncilMember* student = new StudentCouncilMember(names[i]);
-		listOfAllStudents[i] = student;
+	     StudentCouncilMember* student = new StudentCouncilMember(names[i]);
+	     listOfAllStudents[i] = student;
 	}
 
     for(int i=0; i<5; i++)
@@ -103,7 +103,7 @@ int main(int argc, const char * argv[]) {
 	cout << endl;
 	for (int i = 0; i < 5; i++)
 	{
-		cout<< "Проведение экзамена в группе " << listOfAllGroups[i]->getGroupNumber()<< endl;
+	        cout<< "Проведение экзамена в группе " << listOfAllGroups[i]->getGroupNumber()<< endl;
 		listOfAllGroups[i]->startExam();
 	}
 	Student* listOfAllNerdStudents[10];
