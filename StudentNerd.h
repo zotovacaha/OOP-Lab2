@@ -1,9 +1,12 @@
+#pragma once
 
-#include "student.h"
+#include "Student.h"
+
 class StudentNerd: public Student
 {
 public:
-	StudentNerd(string name);
+	StudentNerd(const string &name);
+	StudentNerd(Student* student);
 	int doTheExam() override;
 	int doTheRetakeExam() override;
 	~StudentNerd();
