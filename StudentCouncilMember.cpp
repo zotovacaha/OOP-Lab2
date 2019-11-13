@@ -2,9 +2,11 @@
 
 StudentCouncilMember::StudentCouncilMember(const string &name): StudentDefault(name)
 {
+	
 }
 StudentCouncilMember::StudentCouncilMember(Student* student) : StudentDefault(student->getName())
 {
+	
 }
 int StudentCouncilMember::doTheRetakeExam()
 {
@@ -12,5 +14,6 @@ int StudentCouncilMember::doTheRetakeExam()
 }
 StudentCouncilMember::~StudentCouncilMember()
 {
+	
 }
 
