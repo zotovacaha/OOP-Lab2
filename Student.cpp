@@ -1,19 +1,15 @@
 
-#include "student.h"
-#include "studentdefault.h"
-#include "StudentCouncilMember.h"
-#include "StudentNerd.h"
+#include "Student.h"
 
-Student::Student(string name, int min_grade)
+Student::Student(const string &name, int minGrade)
 {
     this->name = name;
-	this->min_grade = min_grade;
+    this->minGrade = minGrade;
 }
 Student::Student()
 {
-  
     this->name = "";
-    this->min_grade = 0;
+    this->minGrade = 0;
 }
 void Student::addGroupNumber(int groupNumber)
 {
@@ -26,21 +22,6 @@ void Student::deleteGroupNumber(int groupNumber)
         groupNumbers.erase(position);
     }
 }
-StudentDefault* Student::switchToDefaultStudent()
-{
-	return new StudentDefault(this->name);
-}
-StudentNerd* Student::switchToNerd()
-{
-	return new StudentNerd(this->name);
-}
-StudentCouncilMember* Student::switchToCouncilMember()
-{
-	return new StudentCouncilMember(this->name);
-}
-
-
-
 
 //GETTERS
 string Student::getName()
@@ -49,12 +30,11 @@ string Student::getName()
 }
 int Student::getMinGrade()
 {
-    return this->min_grade;
+    return this->minGrade;
 }
 int Student::getGroupCount()
 {
-
-	return this->groupNumbers.size();
+    return this->groupNumbers.size();
 }
 const vector<int>& Student::getGroupNumbers()
 {
@@ -62,8 +42,9 @@ const vector<int>& Student::getGroupNumbers()
 }
 
 //SETTERS
-void Student::setName(string name)
+void Student::setName(const string &name)
 {
     this->name = name;
 }
+
 
