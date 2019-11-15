@@ -40,7 +40,6 @@ const vector<int>& Student::getGroupNumbers()
 {
     return this->groupNumbers;
 }
-
 //SETTERS
 void Student::setName(const string &name)
 {
