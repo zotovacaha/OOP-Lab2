@@ -1,5 +1,5 @@
-#ifndef student_h
-#define student_h
+#ifndef Student_h
+#define Student_h
 
 #include <stdio.h>
 #include <vector>
@@ -14,7 +14,7 @@ private:
     int minGrade;
     vector<int> groupNumbers;
 public:
-void addGroupNumber(int groupNumber);
+    void addGroupNumber(int groupNumber);
     void deleteGroupNumber(int groupNumber);
     const string& getName();
     void setName(const string &name);
