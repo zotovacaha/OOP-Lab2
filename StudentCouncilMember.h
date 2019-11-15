@@ -5,9 +5,9 @@
 class StudentCouncilMember: public StudentDefault
 {
 public:
-	StudentCouncilMember(const string &name);
-	StudentCouncilMember(Student* student);
-	int doTheRetakeExam() override;
-	~StudentCouncilMember();
+    StudentCouncilMember(const string &name);
+    StudentCouncilMember(Student* student);
+    int doTheRetakeExam() override;
+    ~StudentCouncilMember();
 };
 
