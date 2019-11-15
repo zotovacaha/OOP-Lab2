@@ -1,5 +1,5 @@
-#ifndef StudentGroup_h
-#define StudentGroup_h
+#ifndef studentGroup_h
+#define studentGroup_h
 
 #include <stdio.h>
 #include <algorithm>
@@ -20,16 +20,13 @@ public:
     void addStudent(Student* student);
     Student* getStudentByName(string &name);
     void deleteStudent(Student* student);
-    void deleteAllStudents();
+	void deleteAllStudents();
     int getGroupNumber();
     void setGroupNumber(int groupNumber);
-    void startExam();
-    void startRetakeExam(Student* student);
+	void startExam();
+	void startRetakeExam(Student* student);
     vector<Student*> getListOfStudents();
     vector<Student*> getListOfStudentsSortedByGrades();
     StudentGroup(int number);
 };
 #endif 
-
-
-
