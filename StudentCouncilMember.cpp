@@ -10,7 +10,7 @@ StudentCouncilMember::StudentCouncilMember(Student* student) : StudentDefault(st
 }
 int StudentCouncilMember::doTheRetakeExam()
 {
-	return 3 + rand() % 3;
+    return 3 + rand() % 3;
 }
 StudentCouncilMember::~StudentCouncilMember()
 {
