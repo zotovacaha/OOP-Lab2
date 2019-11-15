@@ -10,7 +10,7 @@ void StudentGroup::addStudent(Student* student)
     {
     	if(find(listOfStudents.begin(), listOfStudents.end(), student) != listOfStudents.end()) 
 	{
-        cout<<"Данный студент уже находится в группе"<<endl;
+            cout<<"Данный студент уже находится в группе"<<endl;
         }
 	else 
 	{
