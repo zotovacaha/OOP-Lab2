@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -5,11 +6,11 @@
 #include <vector>
 #include <locale>
 #include <ctime>
-#include "Student.h"
+#include "Student.hpp"
 #include "StudentDefault.h"
 #include "StudentCouncilMember.h"
 #include "StudentNerd.h"
-#include "StudentGroup.h"
+#include "StudentGroup.hpp"
 #include "windows.h"
 
 using namespace std;
@@ -36,18 +37,18 @@ int main(int argc, const char * argv[]) {
     int groups[5] = {111,222,333,444,555};
     for(int i=0; i<6; i++)
     {
-	StudentDefault* student = new StudentDefault(names[i]);
+		StudentDefault* student = new StudentDefault(names[i]);
         listOfAllStudents[i] = student;
     }
 	for (int i = 6; i < 8; i++)
 	{
-	     StudentNerd* student = new StudentNerd(names[i]);
-	     listOfAllStudents[i] = student;
+		StudentNerd* student = new StudentNerd(names[i]);
+		listOfAllStudents[i] = student;
 	}
 	for (int i = 8; i < 10; i++)
 	{
-	     StudentCouncilMember* student = new StudentCouncilMember(names[i]);
-	     listOfAllStudents[i] = student;
+		StudentCouncilMember* student = new StudentCouncilMember(names[i]);
+		listOfAllStudents[i] = student;
 	}
 
     for(int i=0; i<5; i++)
@@ -103,13 +104,14 @@ int main(int argc, const char * argv[]) {
 	cout << endl;
 	for (int i = 0; i < 5; i++)
 	{
-	        cout<< "Проведение экзамена в группе " << listOfAllGroups[i]->getGroupNumber()<< endl;
+		cout<< "Проведение экзамена в группе " << listOfAllGroups[i]->getGroupNumber()<< endl;
 		listOfAllGroups[i]->startExam();
 	}
 	Student* listOfAllNerdStudents[10];
 	for (int i = 0; i < 10; i++)
 	{
 		StudentNerd* tempNerd = new StudentNerd(listOfAllStudents[i]);
+		delete listOfAllStudents[i];
 		listOfAllNerdStudents[i]= tempNerd;
 	}
 	for (int i = 0; i < 5; i++)
@@ -129,10 +131,8 @@ int main(int argc, const char * argv[]) {
 		listOfAllGroups[i]->startExam();
 	}
 	system("pause");
-	
 return 0;
 }
-
 
 
 
