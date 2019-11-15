@@ -3,7 +3,7 @@
 Student::Student(const string &name, int minGrade)
 {
     this->name = name;
-	this->minGrade = minGrade;
+    this->minGrade = minGrade;
 }
 Student::Student()
 {
@@ -34,7 +34,7 @@ int Student::getMinGrade()
 }
 int Student::getGroupCount()
 {
-	return this->groupNumbers.size();
+    return this->groupNumbers.size();
 }
 const vector<int>& Student::getGroupNumbers()
 {
