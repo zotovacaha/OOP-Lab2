@@ -1,10 +1,9 @@
-
 #include "Student.h"
 
 Student::Student(const string &name, int minGrade)
 {
     this->name = name;
-    this->minGrade = minGrade;
+	this->minGrade = minGrade;
 }
 Student::Student()
 {
@@ -18,13 +17,14 @@ void Student::addGroupNumber(int groupNumber)
 void Student::deleteGroupNumber(int groupNumber)
 {
     vector<int>::iterator position = find(groupNumbers.begin(), groupNumbers.end(), groupNumber);
-    if (position != groupNumbers.end()){
+    if (position != groupNumbers.end())
+    {
         groupNumbers.erase(position);
     }
 }
 
 //GETTERS
-string Student::getName()
+const string& Student::getName()
 {
     return this->name;
 }
@@ -34,7 +34,7 @@ int Student::getMinGrade()
 }
 int Student::getGroupCount()
 {
-    return this->groupNumbers.size();
+	return this->groupNumbers.size();
 }
 const vector<int>& Student::getGroupNumbers()
 {
@@ -46,5 +46,6 @@ void Student::setName(const string &name)
 {
     this->name = name;
 }
+
 
 
