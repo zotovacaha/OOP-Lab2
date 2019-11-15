@@ -5,11 +5,11 @@
 #include <vector>
 #include <locale>
 #include <ctime>
-#include "Student.hpp"
+#include "Student.h"
 #include "StudentDefault.h"
 #include "StudentCouncilMember.h"
 #include "StudentNerd.h"
-#include "StudentGroup.hpp"
+#include "StudentGroup.h"
 #include "windows.h"
 
 using namespace std;
