@@ -20,7 +20,7 @@ void StudentGroup::addStudent(Student* student)
     }
     else
     {
-        cout<<"В группе не может быть больше 20 студентов"<<endl;
+     	cout<<"В группе не может быть больше 20 студентов"<<endl;
     }
 }
 void StudentGroup::deleteStudent(Student* student)
