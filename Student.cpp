@@ -22,7 +22,6 @@ void Student::deleteGroupNumber(int groupNumber)
         groupNumbers.erase(position);
     }
 }
-
 //GETTERS
 const string& Student::getName()
 {
