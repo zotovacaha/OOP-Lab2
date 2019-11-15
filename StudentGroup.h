@@ -1,4 +1,3 @@
-
 #ifndef StudentGroup_h
 #define StudentGroup_h
 
